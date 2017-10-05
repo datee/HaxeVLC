@@ -1,24 +1,13 @@
-/*
-#include <Windows.h>
-#include <stdint.h>
-#include <io.h>
-#include <stdio.h>
-#include <fcntl.h>
-*/
 #include <mutex>
 #include <iostream>
 #include <string>
 #include <StdInt.h>
-//#include "main.h"
 #include <windows.h> 
 
 using std::string;
 using namespace std;
 
 /////////////////////////////////////////////////////////////////////////////////////
-
-//t_ctx ctx;
-//uint8_t* pixel;
 
 LibVLC::LibVLC(void)
 {
@@ -44,7 +33,6 @@ LibVLC::LibVLC(void)
 	libVlcInstance = libvlc_new(Argc, Args);
 	//libVlcInstance = libvlc_new(0, NULL);
 	
-	//std::cout << "created " << libVlcInstance << std::endl;
 }
 //#if PLATFORM_LINUX
 //"--no-xlib",
@@ -73,17 +61,7 @@ LibVLC::~LibVLC(void)
 	
 	delete ctx.pixeldata;
 }
-/*
-LibVLC* LibVLC::i=NULL;
-LibVLC* LibVLC::create()
-{
-    if(!i)
-	{
-        i=new LibVLC;
-    }
-    return i;
-}
-*/
+
 LibVLC* LibVLC::create()
 {
     return new LibVLC;
@@ -447,15 +425,9 @@ void LibVLC::registerEvents()
     libvlc_event_attach( eventManager, libvlc_MediaPlayerSeekableChanged, callbacks, this );
 }
 
-//cpp::Function<Void (String)> vlcCallbackMth;
-//int LibVLC::callbackIndex;
-
 void LibVLC::callbacks( const libvlc_event_t* event, void* ptr )
 {
     LibVLC* self = reinterpret_cast<LibVLC*>( ptr );
-	
-	//String msg = String("");
-	//std::string msg = "";
 	
     switch ( event->type )
     {
@@ -533,10 +505,6 @@ void LibVLC::callbacks( const libvlc_event_t* event, void* ptr )
 			break;
     }
 	
-	//if (msg!=String(""))
-	//{
-		//self->vlcCallbackMth(msg + String("_$") + String(self->callbackIndex));
-	//}
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
