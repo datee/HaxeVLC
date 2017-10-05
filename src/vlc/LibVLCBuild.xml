@@ -5,13 +5,11 @@
 	<files id='haxe'>
 		<compilervalue name="-I" value="${CPP_DIR}/include/" />
 		<compilervalue name="-I" value="${CPP_DIR}/src/" />
-		<!--<file name="${CPP_DIR}/src/LibVLC.cpp" />-->
 	</files>
 	
 	<target id='haxe' tool='linker' toolid='exe'>
 		<lib name='${CPP_DIR}/lib/libvlc.lib' if='windows'/>
 		<lib name='${CPP_DIR}/lib/libvlccore.lib' if='windows'/>
-        <!--<files id="main"/>-->
 	</target>
 	
 </xml>

@@ -156,10 +156,6 @@ class VlcBitmap extends Bitmap
 				libvlc.playInWindow();
 				
 			libvlc.setWindowFullscreen(fullscreen);
-			//if (hideApp)
-			//{
-				//WindowHelper.showWindow(false);
-			//}			
 		}
 			
 		if (onPlay != null)
@@ -277,11 +273,7 @@ class VlcBitmap extends Bitmap
 			texture2.dispose();
 		
 		texture = Lib.current.stage.stage3Ds[0].context3D.createRectangleTexture(videoWidth, videoHeight, BGRA, true);
-		//texture2 = Lib.current.stage.stage3Ds[0].context3D.createRectangleTexture(videoWidth, videoHeight, BGRA, true);
-		//bmdBuf 	= BitmapData.fromTexture(texture);
 		this.bitmapData = BitmapData.fromTexture(texture);
-		//this.bitmapData = new BitmapData(videoWidth, videoHeight, false, 0xff000000);
-		//bmdBuf2 = BitmapData.fromTexture(texture2);
 		smoothing = true;
 		
 		if (_width != null)

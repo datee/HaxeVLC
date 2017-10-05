@@ -118,19 +118,8 @@ extern class LibVLC
 	@:native("flags")
 	public var flags:Array<Int>;
 	
-	//@:native("setCallback")
-	//public function setCallback(callback:cpp.Callable<String->Void>, callbackIndex:Int):Void;
-
-	
-	
-	//public function setCallback(callback:cpp.Callable<RawPointer<RawPointer<cpp.Void>> ->Void->Void >):Void;
-	//public function setCallback(funcPointer:RawPointer<VlcCallback>):Void;
-	//public function setCallback(callback:cpp.Function<Void->Int,cpp.abi.Abi>):Void;
-	//public function setCallback(callback:Void->Void):Void;
-
 	public inline function dispose():Void
 	{
-		//untyped __cpp__('delete libVLC');
 		untyped __cpp__('delete this');
 	}
 }
