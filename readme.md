@@ -20,3 +20,5 @@ Generic playback functions is supported: play, stop, seek, time etc..
  * Consider this more of a test than an actual finished library
  * VLC does not handle decoding using GPU that well.. so 4k works, but can be challenging
  * In essence, has the same features as the VLC player
+ * Can also open a seperate window to play the video using DirectDraw (Better performance)
+ * Can play videos in fullscreen using DirectDraw (Better performance)
