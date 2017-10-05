@@ -12,6 +12,7 @@ Generic playback functions is supported: play, stop, seek, time etc..
 
 ### Windows only ..for now
 
+ * Comes with a FD/HD project setup, but you can use whatever you want
  * Linux / Mac / Android version could come at some point, should be easy to implement
  * Does not need to have anything installed (Does not need the VLC player installed)
  * Must have the dll's and the "plugin" folder present in the application dir
