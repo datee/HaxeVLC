@@ -4,6 +4,7 @@ Superbasic video player using C++/VLC:
 
  * Early version, expect a rewrite, not the best solution
  * Generic VLC Externs in the making
+ * Tested with OpenFL 6.2.0 / Lime 5.6.0
 
 As you all know OpenFL does not have a video player for the native c++ target. This example uses the the VLC libraries in c++ and creates a "VLCBitmap" that you can add to the OpenFL displaylist along other items.
 
