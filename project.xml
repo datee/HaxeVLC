@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	<meta title="HaxeVLC" package="no.logicinteractive" version="1.0.0" company="LogicInteractive" />
+	
+	<app main="Main" file="HaxeOpenFLVLC" path="bin" />
+	
+	<window background="#000000" fps="61" hardware="true" />
+	<window width="1280" height="720"  />
+	
+	<source path="src" />
+	<source path="libs" />
+  	<haxelib name="openfl" /> 
+	
+</project>
