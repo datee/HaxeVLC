@@ -1,4 +1,5 @@
 # Haxe VLC/OpenFL integration
+# This is old and unmaintained for the moment. Sorry. 
 
 Superbasic video player using C++/VLC:
 
